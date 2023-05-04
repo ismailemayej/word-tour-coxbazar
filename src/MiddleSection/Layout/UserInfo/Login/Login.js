@@ -10,7 +10,7 @@ const Login = () => {
   const { Login } = useContext(AuthContext);
   const Navigate = useNavigate();
   const location = useLocation();
-  const from = location.state?.from?.pahtname || "/";
+  const from = location.state?.from?.pathname || "/";
 
   const handleLogin = (event) => {
     event.preventDefault();
